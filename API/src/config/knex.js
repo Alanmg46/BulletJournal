@@ -6,5 +6,6 @@ export default knex({
     filename: "./mydb.sqlite",
     useNullAsDefault: true,
     charset: "utf8"
-  }
+  },
+  useNullAsDefault: true
 });
