@@ -13,7 +13,6 @@ export default class Bullet extends Component {
                 <Text style={styles.bulletText}>{this.props.val.date}</Text>
                 <Text style={styles.bulletText}>{this.props.val.bullet}</Text>
                 <TouchableOpacity onPress={this.props.deleteMethod} style={styles.bulletDelete}>
-                    <Text style={styles.bulletDeleteText}>🗑️</Text>
                     <Text style={styles.bulletDeleteText}>✔️</Text>
                 </TouchableOpacity>
             </View>
@@ -40,11 +39,13 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: '#48dbfb',
+        backgroundColor: '#40739e',
         padding: 10,
         top: 10,
         bottom: 10,
         right: 10,
         borderRadius: 10
+        borderRadius: 10,
     },
     bulletDeleteText: {
         color: 'white'
